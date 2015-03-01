@@ -1,0 +1,52 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial;
+  font-size: 12px;
+}
+.notes-container {
+  width: 300px;
+  margin: 5px 0 0 5px;
+  border: 1px solid #ddd;
+}
+.node-item {
+  background-color: #eee;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.node-item span {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.node-item .remove-button {
+  color: #f00;
+  float: right;
+  cursor: pointer;
+}
+.node-item .remove-button:after {
+  clear: both;
+}
+.node-item .time-title {
+  font-style: italic;
+  margin: 3px 0 0 0;
+  text-align: center;
+}
+.note-add {
+  background-color: #ddd;
+  padding: 5px;
+}
+.note-add input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.note-add .button-container {
+  margin: 3px 0 0 0;
+  text-align: right;
+}
+
+/*# sourceMappingURL=app.css.map*/
