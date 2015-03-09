@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>PicList</title>
+    <link href="app-3111fb940a9d2b1cb37f.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBar">
+            <input type="text" maxlength="100" data-bind="textInput:criteria,event:{keypress:searchByEnter}" /> <button data-bind="click:search">search</button>
+        </div>
+        <div class="sortBar">
+            Sort by: <span data-bind="foreach:sorts">
+                <a href="javascript:void" data-bind="text:name,click:sort"></a> <span data-bind="text:getOrderSymb()"></span>
+            </span>
+        </div>
+        <div class="pic-list" data-bind="foreach:pics">
+            <!-- ko component: {
+                name: "pic-item",
+                params: {picParameters:$data }
+            } -->
+            <!-- /ko -->
+        </div>
+    </div>
+    <div class="fullScreenCover" data-bind="visible:isFullScreen"></div>
+    <div class="fullScreen" data-bind="visible:isFullScreen">
+        <a href="javascript:void" data-bind="click:closeImg">Close</a>
+        <img data-bind="attr:{src:image().url,alt:image().title}" />
+    </div>
+    <script src="app-3111fb940a9d2b1cb37f.js"></script>
+</body>
+</html>
