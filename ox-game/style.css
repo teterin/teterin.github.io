@@ -1,0 +1,30 @@
+.player {
+  margin-top: 10px; }
+.arena-container {
+  margin-top: 20px; }
+
+.row .cell {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase; }
+  .row .cell:last-child {
+    border-right: none; }
+  .row .cell.highlight {
+    background-color: #9f9; }
+
+.row:last-child .cell {
+  border-bottom: none; }
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.control-panel {
+  margin-top: 20px; }
